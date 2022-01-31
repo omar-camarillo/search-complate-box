@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/*redes*/
+
+html,body{
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+.redes{
+  text-align: center;
+  margin-bottom: 80px;
+}
+.redes .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.redes .button:hover{
+  width: 200px;
+}
+.redes .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.redes .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.redes .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.redes .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.redes .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.redes .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.redes .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.redes .button:hover .icon i{
+  color: #fff;
+}
+.redes .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.redes .button:nth-child(1) span{
+  color: #4267B2;
+}
+.redes .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.redes .button:nth-child(3) span{
+  color: #E1306C;
+}
+.redes .button:nth-child(4) span{
+  color: #333;
+}
+.redes .button:nth-child(5) span{
+  color: #ff0000;
+}
+
+
+/*search*/
+.wrapper{
+  max-width: 600px;
+  margin: 150px auto;
+}
+
+.wrapper .header-logo {
+  text-align: center;
+  padding: 40px;
+  font-size: 30px;
+}
+
+.wrapper .search-input{
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
+
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
+}
+
+footer {
+  font-size: 12px;
+  color: #777777;
+}
+
+footer hr {
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin: 12px;
+}
+
+footer .container-footer-2-web {
+  padding: 12px;
+  max-width: 1200px;
+  margin:  0 auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
